@@ -4,46 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bisness promo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!-- #region header -->
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/index/logo.png" alt="logo" />Product</a
-        >
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./resourses.html">Resources</a></li>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="./index.html" class="header-logo"
+            ><img src="./images/index/logo.png" alt="logo" />Product</a
+          >
+          <ul class="list-navigation">
+            <li class="item-navigation"><a href="./index.html">Product</a></li>
+            <li class="item-navigation">
+              <a href="./pricing.html">Pricing</a>
+            </li>
+            <li class="item-navigation">
+              <a href="./customers.html">Customers</a>
+            </li>
+            <li class="item-navigation">
+              <a href="./resourses.html">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-list-button">
+          <li class="header-item-button">
+            <button type="button">Sing In</button>
+          </li>
+          <li class="header-item-button">
+            <button type="button">Sing Up</button>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sing In</button></li>
-        <li><button type="button">Sing Up</button></li>
-      </ul>
+      </div>
     </header>
     <!-- #endregion header -->
 
     <main>
       <!-- #region hero -->
-      <section>
-        <h1>Work at the speed of thought</h1>
-        <p>
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul>
-          <li><button type="button">Get started</button></li>
-          <li><button type="button">Watch the Video</button></li>
-        </ul>
-        <img
-          src="./images/index/hero-img.png"
-          alt="people communicating"
-          width="610"
-        />
+      <section class="hero">
+        <div class="container hero-wrap">
+          <div class="hero-main-text">
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-content">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <ul class="hero-list-buttons">
+              <li><button type="button">Get started</button></li>
+              <li><button type="button">Watch the Video</button></li>
+            </ul>
+          </div>
+          <div class="container hero-img">
+            <img
+              class="hero-img"
+              src="./images/index/hero-img.png"
+              alt="people communicating"
+              width="610"
+            />
+          </div>
+        </div>
       </section>
       <!-- #endregion hero -->
 
