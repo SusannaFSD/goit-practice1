@@ -780,6 +780,10 @@ font-family: "Montserrat", sans-serif;
     padding: 50px 0;
 }
 
+.feedback-container {
+    margin: 0 auto;
+}
+
 .feedback-title {
     font-weight: 700;
     font-size: 32px;
@@ -798,6 +802,44 @@ font-family: "Montserrat", sans-serif;
     color: #22343d;
     max-width: 537px;
     margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feedback-cards {
+    display: flex;
+    max-width: 1110px;
+    gap: 64px;
+
+}
+
+.feedback-card-item {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 28px;
+    width: 327px;
+    height: 240px;
+}
+
+.icon-star, .icon-emptystar {
+    fill: #f3cd03;
+    margin-bottom: 16px;
+}
+
+.feedback-item-content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    color: #737373;
+}
+
+.feedback-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #02897a;
 }
 
 /* #endregion feedback */
