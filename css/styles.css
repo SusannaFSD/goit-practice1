@@ -970,6 +970,13 @@ img {
     font-size: 16px;
     line-height: 2.1875;
     color: #22343d;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-info-item:hover,
+.footer-info-item:focus {
+    color: #02695f;
+    cursor: pointer;
 }
 
 .footer-info-input {
