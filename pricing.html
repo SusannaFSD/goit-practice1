@@ -4,30 +4,405 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bisness promo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <!-- #region header -->
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/index/logo.png" alt="logo" />Product</a
-        >
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./resourses.html">Resources</a></li>
+    <!-- #region resourses-header -->
+    <header class="header">
+      <div class="container resourses-header-container">
+        <nav class="resourses-header-navigation">
+          <a href="./index.html" class="resourses-header-logo"
+            ><svg class="logo-svg" width="40" height="36">
+              <use href="./images/icons.svg#icon-logo"></use></svg
+            >Product</a
+          >
+          <ul class="resourses-list-navigation">
+            <li class="resourses-item-navigation">
+              <a href="./index.html" class="resourses-current-link">Product</a>
+            </li>
+            <li class="resourses-item-navigation">
+              <a href="./pricing.html" class="resourses-link-navigation"
+                >Pricing</a
+              >
+            </li>
+            <li class="resourses-item-navigation">
+              <a href="./customers.html" class="resourses-link-navigation"
+                >Customers</a
+              >
+            </li>
+            <li class="resourses-item-navigation">
+              <a href="./resourses.html" class="resourses-link-navigation"
+                >Resources</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="resourses-header-list-button">
+          <li class="resourses-header-item-button">
+            <button type="button" class="resourses-btn-sing-in">Sing In</button>
+          </li>
+          <li class="resourses-header-item-button">
+            <button type="button" class="resourses-btn-sing-up">Sing Up</button>
+          </li>
+          <li>
+            <button type="button" class="resourses-theme">
+              <svg class="icon-theme" width="24" height="24">
+                <use href="./images/icons.svg#icon-theme"></use>
+              </svg>
+            </button>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sing In</button></li>
-        <li><button type="button">Sing Up</button></li>
-      </ul>
+      </div>
     </header>
     <!-- #endregion header -->
 
-    <main></main>
-    <footer></footer>
+    <main>
+      <!-- #region product -->
+      <section class="product">
+        <div class="container product-container">
+          <div class="product-content">
+            <h1 class="product-title">
+              Great Business <br />
+              made with Product.
+            </h1>
+            <p class="product-text">
+              Build better customer relationships easily messaging that provides
+              a more personal experience for you and your customers.
+            </p>
+            <div class="product-input-wrap">
+              <input
+                class="product-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Enter your email address"
+              />
+              <button class="product-input-btn" type="submit">Join Now</button>
+            </div>
+
+            <div class="join-picture-wrap">
+              <picture class="picture-item first">
+                <source
+                  srcset="
+                    ./images/resourses/bottom-face.jpg    1x,
+                    ./images/resourses/bottom-face@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/bottom-face.jpg" alt="face 1" />
+              </picture>
+              <picture class="picture-item second">
+                <source
+                  srcset="
+                    ./images/resourses/middle-face.jpg    1x,
+                    ./images/resourses/middle-face@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/middle-face.jpg" alt="face 2" />
+              </picture>
+              <picture class="picture-item third">
+                <source
+                  srcset="
+                    ./images/resourses/top-face.jpg    1x,
+                    ./images/resourses/top-face@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/top-face.jpg" alt="face 3" />
+              </picture>
+              <p class="join-text">
+                Join over <span class="join-text-part">4,000</span>+ other
+              </p>
+            </div>
+          </div>
+
+          <picture>
+            <source
+              srcset="
+                ./images/resourses/browser.png    1x,
+                ./images/resourses/browser@2x.png 2x
+              "
+            />
+            <img src="./images/resourses/browser.png" alt="browser picture" />
+          </picture>
+        </div>
+      </section>
+      <!-- #endregion product -->
+
+      <!-- #region stories -->
+      <section class="stories">
+        <div class="container stories-container">
+          <h2 class="stories-section-title">Latest Stories</h2>
+          <p class="stories-content-paragraph">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+
+          <ul class="stories-list">
+            <li class="stories-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/prosperity.jpg    1x,
+                    ./images/resourses/prosperity@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/prosperity.jpg" alt="papers" />
+              </picture>
+              <p class="content-stories">
+                By <span class="made-by">Wahid Ari</span> | 03 March 2019
+              </p>
+              <h3 class="stories-list-title">
+                Increasing Prosperity With Positive Thinking
+              </h3>
+            </li>
+            <li class="stories-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/motivation.jpg    1x,
+                    ./images/resourses/motivation@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/motivation.jpg" alt="speaker" />
+              </picture>
+              <p class="content-stories">
+                By <span class="made-by">Wahid Ari</span> | 03 March 2019
+              </p>
+              <h3 class="stories-list-title active">
+                Motivation Is The First Step To Success
+              </h3>
+            </li>
+            <li class="stories-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/success.jpg    1x,
+                    ./images/resourses/success@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/success.jpg" alt="suit" />
+              </picture>
+              <p class="content-stories">
+                By <span class="stories-made-by">Wahid Ari</span> | 03 March
+                2019
+              </p>
+              <h3 class="stories-list-title">
+                Success Steps For Your Personal Or Business
+              </h3>
+            </li>
+            <li class="stories-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/laptop.jpg    1x,
+                    ./images/resourses/laptop@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/laptop.jpg" alt="laptop" />
+              </picture>
+              <p class="content-stories">
+                By <span class="made-by">Wahid Ari</span> | 03 March 2019
+              </p>
+              <h3 class="stories-list-title">
+                Increasing Prosperity With Positive Thinking
+              </h3>
+            </li>
+            <li class="stories-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/business.jpg    1x,
+                    ./images/resourses/business@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/business.jpg" alt="business" />
+              </picture>
+              <p class="content-stories">
+                By <span class="made-by">Wahid Ari</span> | 03 March 2019
+              </p>
+              <h3 class="stories-list-title active">
+                Motivation Is The First Step To Success
+              </h3>
+            </li>
+            <li class="stories-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/first.jpg    1x,
+                    ./images/resourses/first@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/first.jpg" alt="laptop" />
+              </picture>
+              <p class="content-stories">
+                By <span class="stories-made-by">Wahid Ari</span> | 03 March
+                2019
+              </p>
+              <h3 class="stories-list-title">
+                Success Steps For Your Personal Or Business
+              </h3>
+            </li>
+          </ul>
+          <p class="more-stories">
+            More Stories
+            <svg class="icon-circle" width="20" height="20">
+              <use href="./images/icons.svg#icon-circle"></use>
+            </svg>
+          </p>
+        </div>
+      </section>
+      <!-- #endregion stories -->
+
+      <!-- #region forma -->
+
+      <section class="forma">
+        <div class="container forma-container">
+          <div class="contact-us-wrap">
+            <h2 class="title-contact-us">Contact Us</h2>
+            <p class="contact-text">
+              Need more detailed information? <br />
+              Get in touch with us.
+            </p>
+            <div class="soc-forma-wrap">
+              <a class="forma-icons-link"
+                ><svg class="icon-soc-nav" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+              <a class="forma-icons-link"
+                ><svg class="icon-soc-nav" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+              <a class="forma-icons-link"
+                ><svg class="icon-soc-nav" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              class="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.972331295457!2d-74.00601558459384!3d40.71277597933059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3164c6d1d1%3A0x8c9b93b7a4b3cb3f!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1619991234567"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+
+          <div class="form-resourses">
+            <p class="form-title">Send a message</p>
+
+            <form class="form">
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Your Name"
+              />
+
+              <input
+                class="form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Your Email"
+              />
+
+              <textarea
+                class="form-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button type="submit" class="button-forma-send">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- #endregion forma -->
+    </main>
+    <!-- #region footer  -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <nav class="footer-nav">
+          <a class="footer-logo" href="./index.html"
+            ><svg class="logo-svg" width="40" height="36">
+              <use href="./images/icons.svg#icon-logo"></use></svg
+            >Product</a
+          >
+          <div class="soc-nav-wrap">
+            <a class="footer-icons-link"
+              ><svg class="icon-soc-nav" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use></svg
+            ></a>
+            <a class="footer-icons-link"
+              ><svg class="icon-soc-nav" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a>
+            <a class="footer-icons-link"
+              ><svg class="icon-soc-nav" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
+          </div>
+        </nav>
+
+        <div class="footer-info">
+          <h3 class="footer-info-title">Resource</h3>
+          <ul class="footer-info-list">
+            <li class="footer-info-item">About Us</li>
+            <li class="footer-info-item">Blog</li>
+            <li class="footer-info-item">Contact</li>
+            <li class="footer-info-item">FAQ</li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h3 class="footer-info-title">Legal Stuff</h3>
+          <ul class="footer-info-list">
+            <li class="footer-info-item">Disclaimer</li>
+            <li class="footer-info-item">Financing</li>
+            <li class="footer-info-item">Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="footer-info-input">
+          <h3 class="footer-input-title">
+            knowing you're always on <br />
+            the best energy deal.
+          </h3>
+          <div class="footer-input-wrap">
+            <input
+              class="footer-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              placeholder="Enter your phone number"
+            />
+            <svg class="footer-input-icon" width="18" height="28">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <button class="footer-btn" type="submit">Sign Up Now</button>
+        </div>
+      </div>
+      <p class="made-by">Made With Love By Figmaland All Right Reserved</p>
+    </footer>
+    <!-- #endregion footer  -->
   </body>
 </html>

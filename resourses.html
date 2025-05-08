@@ -26,7 +26,9 @@
       <div class="container resourses-header-container">
         <nav class="resourses-header-navigation">
           <a href="./index.html" class="resourses-header-logo"
-            ><img src="./images/index/logo.png" alt="logo" />Product</a
+            ><svg class="logo-svg" width="40" height="36">
+              <use href="./images/icons.svg#icon-logo"></use></svg
+            >Product</a
           >
           <ul class="resourses-list-navigation">
             <li class="resourses-item-navigation">
@@ -97,7 +99,7 @@
               <picture class="picture-item first">
                 <source
                   srcset="
-                    ./images/resourses/bottom-face        1x,
+                    ./images/resourses/bottom-face.jpg    1x,
                     ./images/resourses/bottom-face@2x.jpg 2x
                   "
                 />
@@ -106,7 +108,7 @@
               <picture class="picture-item second">
                 <source
                   srcset="
-                    ./images/resourses/middle-face        1x,
+                    ./images/resourses/middle-face.jpg    1x,
                     ./images/resourses/middle-face@2x.jpg 2x
                   "
                 />
@@ -115,7 +117,7 @@
               <picture class="picture-item third">
                 <source
                   srcset="
-                    ./images/resourses/top-face        1x,
+                    ./images/resourses/top-face.jpg    1x,
                     ./images/resourses/top-face@2x.jpg 2x
                   "
                 />
@@ -130,14 +132,11 @@
           <picture>
             <source
               srcset="
-                ./images/resourses/browsertwo        1x,
-                ./images/resourses/browsertwo@2x.jpg 2x
+                ./images/resourses/browser.png    1x,
+                ./images/resourses/browser@2x.png 2x
               "
             />
-            <img
-              src="./images/resourses/browsertwo.jpg"
-              alt="browser picture"
-            />
+            <img src="./images/resourses/browser.png" alt="browser picture" />
           </picture>
         </div>
       </section>
@@ -154,11 +153,15 @@
 
           <ul class="stories-list">
             <li class="stories-item">
-              <img
-                src="./images/index/image-news1.jpg"
-                alt="hands"
-                class="stories-list-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/prosperity.jpg    1x,
+                    ./images/resourses/prosperity@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/prosperity.jpg" alt="papers" />
+              </picture>
               <p class="content-stories">
                 By <span class="made-by">Wahid Ari</span> | 03 March 2019
               </p>
@@ -167,11 +170,15 @@
               </h3>
             </li>
             <li class="stories-item">
-              <img
-                src="./images/index/image-news2.jpg"
-                alt="people"
-                class="stories-list-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/motivation.jpg    1x,
+                    ./images/resourses/motivation@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/motivation.jpg" alt="speaker" />
+              </picture>
               <p class="content-stories">
                 By <span class="made-by">Wahid Ari</span> | 03 March 2019
               </p>
@@ -180,11 +187,15 @@
               </h3>
             </li>
             <li class="stories-item">
-              <img
-                src="./images/index/image-news3.jpg"
-                alt="buildings"
-                class="stories-list-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/success.jpg    1x,
+                    ./images/resourses/success@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/success.jpg" alt="suit" />
+              </picture>
               <p class="content-stories">
                 By <span class="stories-made-by">Wahid Ari</span> | 03 March
                 2019
@@ -194,11 +205,15 @@
               </h3>
             </li>
             <li class="stories-item">
-              <img
-                src="./images/index/image-news1.jpg"
-                alt="hands"
-                class="stories-list-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/laptop.jpg    1x,
+                    ./images/resourses/laptop@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/laptop.jpg" alt="laptop" />
+              </picture>
               <p class="content-stories">
                 By <span class="made-by">Wahid Ari</span> | 03 March 2019
               </p>
@@ -207,11 +222,15 @@
               </h3>
             </li>
             <li class="stories-item">
-              <img
-                src="./images/index/image-news2.jpg"
-                alt="people"
-                class="stories-list-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/business.jpg    1x,
+                    ./images/resourses/business@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/business.jpg" alt="business" />
+              </picture>
               <p class="content-stories">
                 By <span class="made-by">Wahid Ari</span> | 03 March 2019
               </p>
@@ -220,11 +239,15 @@
               </h3>
             </li>
             <li class="stories-item">
-              <img
-                src="./images/index/image-news3.jpg"
-                alt="buildings"
-                class="stories-list-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/resourses/first.jpg    1x,
+                    ./images/resourses/first@2x.jpg 2x
+                  "
+                />
+                <img src="./images/resourses/first.jpg" alt="laptop" />
+              </picture>
               <p class="content-stories">
                 By <span class="stories-made-by">Wahid Ari</span> | 03 March
                 2019
@@ -321,7 +344,9 @@
       <div class="container footer-container">
         <nav class="footer-nav">
           <a class="footer-logo" href="./index.html"
-            ><img src="./images/index/logo.png" alt="logo" />Product</a
+            ><svg class="logo-svg" width="40" height="36">
+              <use href="./images/icons.svg#icon-logo"></use></svg
+            >Product</a
           >
           <div class="soc-nav-wrap">
             <a class="footer-icons-link"
