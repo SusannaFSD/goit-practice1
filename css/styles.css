@@ -75,7 +75,6 @@ img {
         gap: 16px;
         margin-right: 237px;
     
-        font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-size: 30px;
         line-height: 0.9;
@@ -96,26 +95,22 @@ img {
     }
 
     .link-navigation {
-        font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.75;
         color: #22343d;
         padding: 26px 0;
         display: inline-block;
-
         transition: color 0.2s ease-in-out;
     }
 
     .current-link {
-        font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-size: 16px;
         line-height: 1.75;
         color: #22343d;
         padding: 26px 0;
         display: inline-block;
-
         transition: color 0.2s ease-in-out;
     }
 
@@ -136,7 +131,6 @@ img {
     width: 105px;
     height: 42px;
     background-color: transparent;
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
@@ -146,7 +140,7 @@ img {
 }
 
 .btn-sing-in:hover,
-.btn-sing-in:focus {
+.btn-sing-in:focus-within {
     background-color: #02897a;
     transform: translateY(-2px);
     color: #fff;
@@ -158,7 +152,6 @@ img {
     width: 113px;
     height: 42px;
     background-color: #02897a;
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #fff;
@@ -167,10 +160,11 @@ img {
 }
 
 .btn-sing-up:hover,
-.btn-sing-up:focus {
+.btn-sing-up:focus-within {
     color: #02695f;
     transform: translateY(-2px);
     background-color: #fff;
+    border: 1px solid #bcd0e5;
 }
        
 /* #endregion header */
@@ -1086,8 +1080,6 @@ img {
      align-items: center;
      gap: 16px;
      margin-right: 237px;
-
-     font-family: "Poppins", sans-serif;
      font-weight: 700;
      font-size: 30px;
      line-height: 0.9;
@@ -1108,26 +1100,22 @@ img {
  }
 
  .resourses-link-navigation {
-     font-family: "Poppins", sans-serif;
      font-weight: 400;
      font-size: 16px;
      line-height: 1.75;
      color: #22343d;
      padding: 26px 0;
      display: inline-block;
-
      transition: color 0.2s ease-in-out;
  }
 
  .resourses-current-link {
-     font-family: "Poppins", sans-serif;
      font-weight: 600;
      font-size: 16px;
      line-height: 1.75;
      color: #22343d;
      padding: 26px 0;
      display: inline-block;
-
      transition: color 0.2s ease-in-out;
  }
 
@@ -1149,7 +1137,6 @@ img {
      min-width: 102px;
      height: 42px;
      background-color: transparent;
-     font-family: "Poppins", sans-serif;
      font-weight: 600;
      font-size: 16px;
      text-align: center;
@@ -1170,7 +1157,6 @@ img {
      min-width: 110px;
      height: 42px;
      background-color: #02897a;
-     font-family: "Poppins", sans-serif;
      font-weight: 600;
      font-size: 16px;
      color: #fff;
@@ -1179,10 +1165,11 @@ img {
  }
 
  .resourses-btn-sing-up:hover,
- .resourses-btn-sing-up:focus {
+ .resourses-btn-sing-up:focus-within {
      color: #02695f;
      transform: translateY(-2px);
      background-color: #fff;
+     border: 1px solid #bcd0e5;
  }
 
  .resourses-theme {
@@ -1208,8 +1195,14 @@ img {
     transform: translateY(-2px);
 }
 
-.icon-theme:hover,
-.icon-theme:focus {
+/* .icon-theme:hover,
+.icon-theme:focus-within {
+    fill: #fff;
+    border: none;
+} */
+
+.resourses-theme:hover .icon-theme,
+.resourses-theme:focus-within .icon-theme {
     fill: #fff;
     border: none;
 }
@@ -1273,11 +1266,11 @@ img {
     min-height: 50px;
     background-color: #02897a;
     transform: translateY(-50%);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 600;
     font-size: 16px;
     line-height: 0;
     color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-input:hover,
@@ -1315,6 +1308,16 @@ img {
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
+
+    transition: transform 250ms ease-in-out;
+        cursor: pointer;
+}
+
+.picture-item:hover,
+.picture-item:focus-within,
+.picture-item:has(img:focus) {
+    transform: scale(1.25);
+    z-index: 5;
 }
 
 .picture-item img {
@@ -1460,7 +1463,7 @@ img {
     color: #02695f;
  }
 
- /* #endregion srtategy */
+ /* #endregion stories */
 
  /* #region forma */
 
@@ -1515,7 +1518,7 @@ img {
      width: 871px;
      height: 323px;
      overflow: hidden;
-     margin: 0 auto;
+     margin: 0 auto 50px;
  }
 
  .google-map {
@@ -1523,4 +1526,88 @@ img {
      height: 100%;
      border: 0;
  }
+
+ .form-resourses {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 52px 50px;
+    width: 868px;
+    height: 670px;
+    margin: 0 auto 100px;
+ }
+
+ .form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.375;
+    letter-spacing: 0em;
+    color: #252b42;
+    text-align: center;
+    margin-bottom: 50px;
+ }
+
+ .form {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+ }
+
+ .form-input {
+    border: 1px solid #e8e8e8;
+    border-radius: 39px;
+    padding: 19px 20px;
+    width: 768px;
+    height: 54px;
+    background-color: #f5f5f5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .form-textarea {
+    border: 1px solid #e8e8e8;
+    padding: 23px 20px;
+    width: 768px;
+    height: 193px;
+    background-color: #f5f5f5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .button-forma-send {
+    border-radius: 35px;
+    padding: 18px 38px;
+    width: 145px;
+    height: 52px;
+    background-color: #02897a;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;        
+    letter-spacing: 0.01em;
+    color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .form-input:hover,
+ .form-input:focus-within,
+ .form-textarea:hover,
+ .form-textarea:focus-within {
+     border-color: #02695f;
+     outline: none;
+ }
+
+ .button-forma-send:hover,
+ .button-forma-send:focus-within {
+     background-color: #fff;
+     color: #02695f;
+     border: 1px solid #02695f;
+     cursor: pointer;
+ }
+
+ .form-input::placeholder,
+ .form-textarea::placeholder {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.06667;
+        letter-spacing: 0.01em;
+        color: #22343d;
+ }
+ 
   /* #endregion forma */
