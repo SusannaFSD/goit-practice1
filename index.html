@@ -25,13 +25,13 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="./index.html" class="header-logo"
-            >
+          <a href="./index.html" class="header-logo">
             <svg class="logo-svg" width="40" height="36">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
             Product</a
           >
+
           <ul class="list-navigation">
             <li class="item-navigation">
               <a href="./index.html" class="current-link">Product</a>
@@ -56,6 +56,12 @@
             <button type="button" class="btn-sing-up">Sing Up</button>
           </li>
         </ul>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="28" height="31">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- #endregion header -->
@@ -84,14 +90,13 @@
               </li>
             </ul>
           </div>
-          <div class="container hero-img">
-            <img
-              class="hero-img"
-              src="./images/index/hero-img.png"
-              alt="people communicating"
-              width="610"
-            />
-          </div>
+
+          <img
+            class="hero-img"
+            src="./images/index/hero-img.png"
+            alt="people communicating"
+            width="610"
+          />
         </div>
       </section>
       <!-- #endregion hero -->
@@ -104,7 +109,7 @@
           </h2>
           <ul class="cards">
             <li class="card-item">
-              <svg class="card-icon" width="54" height="61">
+              <svg class="card-icon" width="51" height="50">
                 <use href="./images/icons.svg#icon-click"></use>
               </svg>
               <h3 class="card-title">First click tests</h3>
@@ -114,7 +119,7 @@
             </li>
 
             <li class="card-item">
-              <svg class="card-icon" width="54" height="61">
+              <svg class="card-icon" width="51" height="50">
                 <use href="./images/icons.svg#icon-surveys"></use>
               </svg>
               <h3 class="card-title">Design surveys</h3>
@@ -124,7 +129,7 @@
             </li>
 
             <li class="card-item">
-              <svg class="card-icon" width="54" height="61">
+              <svg class="card-icon" width="51" height="50">
                 <use href="./images/icons.svg#icon-preferences"></use>
               </svg>
               <h3 class="card-title">Preference tests</h3>
@@ -134,7 +139,7 @@
             </li>
 
             <li class="card-item">
-              <svg class="card-icon" width="54" height="61">
+              <svg class="card-icon" width="51" height="50">
                 <use href="./images/icons.svg#icon-time"></use>
               </svg>
               <h3 class="card-title">Five second tests</h3>
@@ -263,7 +268,7 @@
                 <h3 class="item-title">Alterationists</h3>
                 <p class="section-list-content">
                   If you are looking for a new way to promote your business that
-                  won’t cost you more money,
+                  won't cost you more money,
                 </p>
               </li>
             </ul>
@@ -484,7 +489,8 @@
         <div class="container feedback-container">
           <h2 class="feedback-title">What Clients Say</h2>
           <p class="feedback-paragraph">
-            Problems trying to resolve the conflict between <br />
+            Problems trying to resolve the conflict between
+            <span class="desktop-br"><br /></span>
             the two major realms of Classical physics: Newtonian mechanics
           </p>
           <ul class="feedback-cards">
@@ -509,14 +515,15 @@
                 reach your financial goal.
               </p>
               <div class="feedback-namecard">
-                <source
-                  srcset="
-                    ./images/index/avatar5.jpg    1x,
-                    ./images/index/avatar5@2x.jpg 2x
-                  "
-                />
-                <img src="./images/index/avatar5.jpg" alt="avatar5" />
-              </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/index/avatar5.jpg    1x,
+                      ./images/index/avatar5@2x.jpg 2x
+                    "
+                  />
+                  <img src="./images/index/avatar5.jpg" alt="avatar5" />
+                </picture>
                 <div>
                   <h4 class="feedback-name">Wahid Ari</h4>
                   <p class="feedback-name-position">Designer</p>
@@ -545,14 +552,15 @@
                 reach your financial goal.
               </p>
               <div class="feedback-namecard">
-                <source
-                  srcset="
-                    ./images/index/avatar6.jpg    1x,
-                    ./images/index/avatar6@2x.jpg 2x
-                  "
-                />
-                <img src="./images/index/avatar6.jpg" alt="avatar6" />
-              </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/index/avatar6.jpg    1x,
+                      ./images/index/avatar6@2x.jpg 2x
+                    "
+                  />
+                  <img src="./images/index/avatar6.jpg" alt="avatar6" />
+                </picture>
                 <div>
                   <h4 class="feedback-name">Wahid Ari</h4>
                   <p class="feedback-name-position">Designer</p>
@@ -581,14 +589,15 @@
                 reach your financial goal.
               </p>
               <div class="feedback-namecard">
-                <source
-                  srcset="
-                    ./images/index/avatar7.jpg    1x,
-                    ./images/index/avatar7@2x.jpg 2x
-                  "
-                />
-                <img src="./images/index/avatar7.jpg" alt="avatar7" />
-              </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/index/avatar7.jpg    1x,
+                      ./images/index/avatar7@2x.jpg 2x
+                    "
+                  />
+                  <img src="./images/index/avatar7.jpg" alt="avatar7" />
+                </picture>
                 <div>
                   <h4 class="feedback-name">Wahid Ari</h4>
                   <p class="feedback-name-position">Designer</p>
@@ -619,9 +628,9 @@
       <div class="container footer-container">
         <nav class="footer-nav">
           <a class="footer-logo" href="./index.html"
-            ><svg class="logo-svg" width="40" height="36">
-              <use href="./images/icons.svg#icon-logo"></use>
-            </svg>Product</a
+            ><svg class="logo-svg" width="32" height="30">
+              <use href="./images/icons.svg#icon-logo"></use></svg
+            >Product</a
           >
           <div class="soc-nav-wrap">
             <a class="footer-icons-link"
